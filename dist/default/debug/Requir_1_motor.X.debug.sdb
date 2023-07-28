@@ -1,0 +1,355 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18877 ]
+[d frameptr 6 ]
+"12 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\adc.c
+[v _initADC initADC `(v  1 e 1 0 ]
+"21
+[v _adc_GetTConversion adc_GetTConversion `(ui  1 e 2 0 ]
+"32
+[v _adc_GetWConversion adc_GetWConversion `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"23 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\dspTask.c
+[v _dspTaskT_Disp7Seg dspTaskT_Disp7Seg `(v  1 e 1 0 ]
+"39
+[v _dspTaskW_OnLCD dspTaskW_OnLCD `(v  1 e 1 0 ]
+"25 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\lcd.c
+[v _initLCD initLCD `(v  1 e 1 0 ]
+"38
+[v _lcdWriteCtrlWord lcdWriteCtrlWord `(v  1 e 1 0 ]
+"46
+[v _lcdWriteDspData lcdWriteDspData `(v  1 e 1 0 ]
+"55
+[v _lcdWriteNibble lcdWriteNibble `(v  1 e 1 0 ]
+"68
+[v _lcdCtrl_SetPos lcdCtrl_SetPos `(v  1 e 1 0 ]
+"80
+[v _lcdCtrl_FunctionSet lcdCtrl_FunctionSet `(v  1 e 1 0 ]
+"84
+[v _lcdCtrl_OnOffDisplay lcdCtrl_OnOffDisplay `(v  1 e 1 0 ]
+"93
+[v _lcdCtrl_SetEntryMode lcdCtrl_SetEntryMode `(v  1 e 1 0 ]
+"97
+[v _lcdCtrl_ClearDisplay lcdCtrl_ClearDisplay `(v  1 e 1 0 ]
+"24 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"107
+[v _initSysPins initSysPins `(v  1 e 1 0 ]
+"390 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16F1xxxx_DFP/1.18.352/xc8\pic\include\proc\pic16f18877.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+[s S118 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"469
+[u S127 . 1 `S118 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES127  1 e 1 @13 ]
+[s S254 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"593
+[u S263 . 1 `S254 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES263  1 e 1 @15 ]
+[s S236 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+]
+"651
+[u S241 . 1 `S236 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES241  1 e 1 @16 ]
+"676
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"738
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"800
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"862
+[v _TRISD TRISD `VEuc  1 e 1 @20 ]
+"924
+[v _TRISE TRISE `VEuc  1 e 1 @21 ]
+"1811
+[v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
+"1831
+[v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
+"2132
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
+[s S33 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"2166
+[s S41 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM 1 0 :2:2 
+]
+[s S45 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S47 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+]
+[s S51 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM0 1 0 :1:2 
+]
+[u S55 . 1 `S33 1 . 1 0 `S41 1 . 1 0 `S45 1 . 1 0 `S47 1 . 1 0 `S51 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES55  1 e 1 @147 ]
+"2488
+[v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
+"2598
+[v _ADREF ADREF `VEuc  1 e 1 @154 ]
+"2761
+[v _ADACQ ADACQ `VEuc  1 e 1 @157 ]
+"2831
+[v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
+"33493
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"34113
+[v _ANSELB ANSELB `VEuc  1 e 1 @8003 ]
+"34733
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"35353
+[v _ANSELD ANSELD `VEuc  1 e 1 @8025 ]
+"35787
+[v _ANSELE ANSELE `VEuc  1 e 1 @8036 ]
+"24 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"74
+[v main@message6 message6 `[13]uc  1 a 13 13 ]
+"73
+[v main@message5 message5 `[13]uc  1 a 13 0 ]
+"75
+[v main@i_188 i `ui  1 a 2 78 ]
+"50
+[v main@message4 message4 `[14]uc  1 a 14 47 ]
+"49
+[v main@message3 message3 `[13]uc  1 a 13 61 ]
+"51
+[v main@i_183 i `ui  1 a 2 76 ]
+"31
+[v main@message2 message2 `[17]uc  1 a 17 30 ]
+"30
+[v main@message1 message1 `[17]uc  1 a 17 13 ]
+"32
+[v main@i i `ui  1 a 2 74 ]
+"29
+[v main@F12167 F12167 `[17]uc  1 s 17 F12167 ]
+"30
+[v main@F12169 F12169 `[17]uc  1 s 17 F12169 ]
+"48
+[v main@F12172 F12172 `[13]uc  1 s 13 F12172 ]
+"49
+[v main@F12174 F12174 `[14]uc  1 s 14 F12174 ]
+"72
+[v main@F12177 F12177 `[13]uc  1 s 13 F12177 ]
+"73
+[v main@F12179 F12179 `[13]uc  1 s 13 F12179 ]
+"94
+} 0
+"107
+[v _initSysPins initSysPins `(v  1 e 1 0 ]
+{
+"119
+} 0
+"25 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\lcd.c
+[v _initLCD initLCD `(v  1 e 1 0 ]
+{
+"36
+} 0
+"93
+[v _lcdCtrl_SetEntryMode lcdCtrl_SetEntryMode `(v  1 e 1 0 ]
+{
+"96
+} 0
+"84
+[v _lcdCtrl_OnOffDisplay lcdCtrl_OnOffDisplay `(v  1 e 1 0 ]
+{
+[v lcdCtrl_OnOffDisplay@display_state display_state `uc  1 a 1 wreg ]
+"86
+[v lcdCtrl_OnOffDisplay@pattern pattern `uc  1 a 1 10 ]
+"84
+[v lcdCtrl_OnOffDisplay@display_state display_state `uc  1 a 1 wreg ]
+[v lcdCtrl_OnOffDisplay@cursor_state cursor_state `uc  1 p 1 7 ]
+"86
+[v lcdCtrl_OnOffDisplay@display_state display_state `uc  1 a 1 9 ]
+"92
+} 0
+"80
+[v _lcdCtrl_FunctionSet lcdCtrl_FunctionSet `(v  1 e 1 0 ]
+{
+"83
+} 0
+"97
+[v _lcdCtrl_ClearDisplay lcdCtrl_ClearDisplay `(v  1 e 1 0 ]
+{
+"100
+} 0
+"12 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\adc.c
+[v _initADC initADC `(v  1 e 1 0 ]
+{
+"19
+} 0
+"39 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\dspTask.c
+[v _dspTaskW_OnLCD dspTaskW_OnLCD `(v  1 e 1 0 ]
+{
+"42
+[v dspTaskW_OnLCD@count count `i  1 a 2 10 ]
+"41
+[v dspTaskW_OnLCD@Wlvl Wlvl `ui  1 a 2 4 ]
+"43
+[v dspTaskW_OnLCD@dig3 dig3 `uc  1 a 1 9 ]
+[v dspTaskW_OnLCD@dig2 dig2 `uc  1 a 1 8 ]
+[v dspTaskW_OnLCD@dig1 dig1 `uc  1 a 1 7 ]
+[v dspTaskW_OnLCD@dig0 dig0 `uc  1 a 1 6 ]
+"60
+} 0
+"46 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\lcd.c
+[v _lcdWriteDspData lcdWriteDspData `(v  1 e 1 0 ]
+{
+[v lcdWriteDspData@x x `uc  1 a 1 wreg ]
+"48
+[v lcdWriteDspData@lower_nibble lower_nibble `uc  1 a 1 5 ]
+[v lcdWriteDspData@upper_nibble upper_nibble `uc  1 a 1 4 ]
+"46
+[v lcdWriteDspData@x x `uc  1 a 1 wreg ]
+"49
+[v lcdWriteDspData@x x `uc  1 a 1 6 ]
+"54
+} 0
+"68
+[v _lcdCtrl_SetPos lcdCtrl_SetPos `(v  1 e 1 0 ]
+{
+[v lcdCtrl_SetPos@row row `uc  1 a 1 wreg ]
+"70
+[v lcdCtrl_SetPos@ramAddr ramAddr `uc  1 a 1 9 ]
+"68
+[v lcdCtrl_SetPos@row row `uc  1 a 1 wreg ]
+[v lcdCtrl_SetPos@col col `uc  1 p 1 7 ]
+"71
+[v lcdCtrl_SetPos@row row `uc  1 a 1 8 ]
+"78
+} 0
+"38
+[v _lcdWriteCtrlWord lcdWriteCtrlWord `(v  1 e 1 0 ]
+{
+[v lcdWriteCtrlWord@x x `uc  1 a 1 wreg ]
+"39
+[v lcdWriteCtrlWord@lower_nibble lower_nibble `uc  1 a 1 5 ]
+[v lcdWriteCtrlWord@upper_nibble upper_nibble `uc  1 a 1 4 ]
+"38
+[v lcdWriteCtrlWord@x x `uc  1 a 1 wreg ]
+"40
+[v lcdWriteCtrlWord@x x `uc  1 a 1 6 ]
+"45
+} 0
+"55
+[v _lcdWriteNibble lcdWriteNibble `(v  1 e 1 0 ]
+{
+[v lcdWriteNibble@nibble nibble `uc  1 a 1 wreg ]
+[v lcdWriteNibble@nibble nibble `uc  1 a 1 wreg ]
+"57
+[v lcdWriteNibble@nibble nibble `uc  1 a 1 2 ]
+"65
+} 0
+"32 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\adc.c
+[v _adc_GetWConversion adc_GetWConversion `(ui  1 e 2 0 ]
+{
+"34
+[v adc_GetWConversion@result result `ui  1 a 2 2 ]
+"41
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 1 ]
+[v ___awmod@counter counter `uc  1 a 1 0 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 9 ]
+[v ___awmod@dividend dividend `i  1 p 2 11 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 7 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 6 ]
+[v ___awdiv@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"23 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\dspTask.c
+[v _dspTaskT_Disp7Seg dspTaskT_Disp7Seg `(v  1 e 1 0 ]
+{
+"26
+[v dspTaskT_Disp7Seg@result result `ui  1 a 2 4 ]
+"25
+[v dspTaskT_Disp7Seg@temp temp `ui  1 a 2 2 ]
+"37
+} 0
+"21 C:\Users\Berni\OneDrive\Desktop\2023\MCAPP DV\Project Dam\Requir_1+motor.X\adc.c
+[v _adc_GetTConversion adc_GetTConversion `(ui  1 e 2 0 ]
+{
+"23
+[v adc_GetTConversion@result result `ui  1 a 2 2 ]
+"30
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"30
+} 0
